@@ -7,11 +7,9 @@ import './styles/main.css'
 function App() {
   return (
     <div className="wrapper">
-      <div className="animated-box" />
-      <h1>React Template</h1>
-      <div className="color blue" />
-      <div className="color skyblue" />
-      <div className="color seablue" />
+      <div className="animated-circle" />
+      <h1 className="text">React Template</h1>
+      <p className="text">with Webpack and Docker configuration.</p>
     </div>
   )
 }
