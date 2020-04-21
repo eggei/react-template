@@ -1,0 +1,83 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["airbnb", "prettier", "plugin:react/recommended"],
+  "plugins": ["html", "json", "react", "prettier"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "one-var": 0,
+    "no-use-before-define": 0,
+    "no-nested-ternary": 0,
+    "no-else-return": 0,
+    "no-console": 1,
+    "no-debugger": 2,
+    "linebreak-style": 1,
+    "no-unused-vars": 1,
+    "function-call-argument-newline": "off",
+    "no-plusplus": 0,
+    "no-underscore-dangle": 0,
+    "react/jsx-indent": [
+      0,
+      0,
+      {
+        "checkAttributes": true,
+        "indentLogicalExpressions": true
+      }
+    ],
+    "react/no-array-index-key": 0,
+    "react/jsx-one-expression-per-line": [
+      0,
+      {
+        "allow": "single-child"
+      }
+    ],
+    "react/prefer-stateless-function": 0,
+    "react/jsx-no-useless-fragment": 2,
+    "react/jsx-props-no-spreading": 0,
+    "react/prop-types": [
+      2,
+      {
+        "skipUndeclared": true
+      }
+    ],
+    "react/no-unused-prop-types": 2,
+    "react/static-property-placement": 0,
+    "react/destructuring-assignment": 0, // [1, "always"]
+    "react/jsx-curly-newline": 0,
+    "react/jsx-wrap-multilines": [
+      "error",
+      {
+        "arrow": true,
+        "return": true,
+        "declaration": true
+      }
+    ],
+    "import/prefer-default-export": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": false,
+        "trailingComma": "all",
+        "singleQuote": true,
+        "tabWidth": 2,
+        "printWidth": 80,
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "arrowParens": "avoid"
+      }
+    ]
+  }
+}

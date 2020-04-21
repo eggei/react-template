@@ -1,0 +1,71 @@
+@import './normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+:root {
+    --yellow: #f5b81e;
+    --parliament: #102540;
+    --blue: #075d9a;
+    --seablue: #76defb;
+    --skyblue: #52a8e1;
+}
+
+#root {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    /* background-color: var(--darkblue); */
+    background: radial-gradient(circle,
+            rgba(16, 37, 64, 1) 11%,
+            rgba(13, 31, 55, 1) 58%,
+            rgba(5, 16, 29, 1) 100%);
+    color: white;
+}
+
+.animated-box {
+    content: '';
+    background-color: var(--yellow);
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    animation: breathe 2s ease-in-out infinite;
+    animation-direction: alternate;
+    border-radius: 100%;
+}
+
+@keyframes breathe {
+    from {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0.8;
+        transform: scale(4);
+    }
+}
+
+.color {
+    height: 80px;
+    width: 64px;
+    display: inline-block;
+    z-index: 0;
+    border-radius: 2px;
+}
+
+.blue {
+    background-color: var(--blue);
+}
+
+.seablue {
+    background: var(--seablue);
+}
+
+.skyblue {
+    background: var(--skyblue);
+}
