@@ -1,15 +1,12 @@
 {
   "name": "react-template",
   "version": "1.0.0",
-  "description": "React starter template with webpack and docker configuration.",
+  "description": "React starter template with linter, webpack, docker configuration.",
   "license": "",
   "repository": {},
   "scripts": {
-    "start": "./scripts/start.sh",
-    "build": "./scripts/build.sh",
-    "docker:build": "./scripts/docker.build.sh",
-    "docker:run": "./scripts/docker.run.sh",
-    "docker:stop": "docker stop template-test",
+    "start": "./bin/start.sh",
+    "build": "./bin/build.sh",
     "eslint:check": "./node_modules/eslint/bin/eslint.js . --ext js,jsx --format codeframe",
     "eslint:fix": "./node_modules/eslint/bin/eslint.js . --ext js,jsx --fix --format codeframe",
     "prettier:check": "./node_modules/prettier/bin-prettier.js --list-different \"./**/*.{json,js,jsx}\"",
